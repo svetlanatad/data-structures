@@ -4,14 +4,14 @@
 
 **University and Faculty:** American University of Armenia, CSE
 
-**Instructor name**  Monika Stepanyan
+**Instructor name**:  Monika Stepanyan
 
 **Trees, Binary Trees, Ternary Trees**: 木
 
 
 
 
-**AbstractTree:**  Added methods
+**AbstractTree**:   Added methods
 **(a)** method ancestors(p) that returns an ArrayList containing the ancestors of position p or-
 dered from the root to p.
 **(b)** method path(p1, p2) that returns a path connecting two positions p1 and p2 as an iterable
@@ -19,9 +19,9 @@ collection of positions. You should use the ancestors() method in your implement
 
 
 
-**TernaryTree: ** Created a generic interface TernaryTree that represents the concept of an ordered generic Tree where each node has at most three children. The children are going to be identified as the left, the middle and the right one. The interface should include methods for returning the positions of respective children, given the position of a parent as well as a method for returning an iterable of positions of the siblings of a position. An appropriate error must be thrown if the argument position is invalid.
+**TernaryTree**:  Created a generic interface TernaryTree that represents the concept of an ordered generic Tree where each node has at most three children. The children are going to be identified as the left, the middle and the right one. The interface should include methods for returning the positions of respective children, given the position of a parent as well as a method for returning an iterable of positions of the siblings of a position. An appropriate error must be thrown if the argument position is invalid.
 
-**AbstractTernaryTree: ** Created a generic abstract class AbstractTernaryTree that is a generic TernaryTree and provides concrete implementations for some of the methods inherited from ancestor interfaces. These should include
+**AbstractTernaryTree**:  Created a generic abstract class AbstractTernaryTree that is a generic TernaryTree and provides concrete implementations for some of the methods inherited from ancestor interfaces. These should include
 **(a)** siblings
 **(b)** numChildren
 **(c)** children
@@ -31,10 +31,10 @@ collection of positions. You should use the ancestors() method in your implement
 
 
 
-**LinkedTernaryTree: ** Created a generic class LinkedTernaryTree that extends the generic AbstractTernaryTree. The class should include all the functionality/attributes of the LinkedBinaryTree with appro-
+**LinkedTernaryTree**:  Created a generic class LinkedTernaryTree that extends the generic AbstractTernaryTree. The class should include all the functionality/attributes of the LinkedBinaryTree with appro-
 priate modifications. Include a main method in this class and create a tree corresponding to Figure 1. The tree should be constructed by first constructing the left, middle and right subtrees of 1 as separate trees and then attaching them to the root node. Print the elements using breadth-first traversal.
 
-**ArrayTernaryTree: ** Created a generic class ArrayTernaryTree that extends the generic AbstractTernaryTree and represents an array-based implementation of a ternary tree. Note that each position in this implementation will be associated with a particular index (computed
+**ArrayTernaryTree**:  Created a generic class ArrayTernaryTree that extends the generic AbstractTernaryTree and represents an array-based implementation of a ternary tree. Note that each position in this implementation will be associated with a particular index (computed
 through level numbering function).
 The class should have two instance variables– an ArrayList for storing the Positions and an int representing the size of the tree.
 The class should have two constructors– one receiving a default capacity for the underlying list, and one initializing it to 1000. Both constructors should insert null elements into the list so that to fill the given capacity.
