@@ -1,0 +1,61 @@
+
+// Making a map, takes like O(1) time, simple enough.
+public UnsortedQueueMap() {
+//just initialization of the queue.
+}
+
+// Counting stuff, just a quick look at the size of the queue.
+@Override
+public int size() {
+    // Returns the size, because who doesn't like knowing the size?
+}
+
+// Fetching values with a key, gotta do a kinda slow linear search through entries.
+// It's like O(n) in the worst case, when the entry is at the far end or not there.
+public V get(K key) {
+    // Going through the entrySet.
+}
+
+// Removing stuff, using an EntryIterator, which is kinda okay, takes O(n) in the worst case.
+public V remove(K key) {
+    // Doing some removal with an iterator       
+}
+
+// Grabbing values, but with a bit of a twist. Makes a snapshot, like in unsortedtablemap.
+// Takes O(n) time, it's like looping through the entire queue.
+public Iterable<V> values() {
+    // Making a snapshot, again, self explanatory.
+}
+
+// Making a snapshot, kinda like a photo but for entries.
+// Takes O(n) time, which is the number of entries in the map.
+private Iterable<V> snapshot(int startIndex) {
+    // Creating a snapshot, again, self explanatory.
+}
+
+// Doing some iterator things, checking if there's more and getting the next one.
+// It's constant O(1) for those methods.
+private class EntryIterator implements Iterator<Entry<K, V>> {
+    // Iterating through entries with an iterator.
+}
+
+// Getting the entries, just returning an iterable.
+// This one's O(1), pretty quick.
+@Override
+public Iterable<Entry<K, V>> entrySet() {
+    // Returning an iterable of entries.
+}
+
+// Adding stuff, but first gotta check if it's already there.
+// Could take a bit of time, like O(n) in the worst case.
+public V put(K key, V value) {
+    // Checking for an existing key, duh.
+}
+
+// Printing, simple enough, just dequeue and print.
+// Takes O(n) time, because it's printing all the entries.
+void print() {
+    // Printing entries one by one.
+    //utility method woohooooooooooo :DDD
+}
+
